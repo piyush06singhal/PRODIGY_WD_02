@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:black;
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+    background:#575859;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.1);
+    text-align: center;
+}
+
+.stopwatch h1 {
+    font-size: 50px;
+}
+
+#display {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: #1aafc3;
+    border-radius: 10px;
+    cursor: pointer; 
+    transition: background 0.3s;
+}
+
+#startStopBtn {
+    background: #28a745;
+    color: white;
+}
+
+#resetBtn {
+    background: #dc3545;
+    color: white;
+}
+
+#lapBtn {
+    background: #007bff;
+    color: white;
+}
+
+.controls button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+#laps {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#laps li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #d34c1b;
+    border: 1px solid black;
+    border-radius: 5px;
+}
